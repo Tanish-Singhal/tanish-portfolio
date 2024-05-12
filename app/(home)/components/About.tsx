@@ -1,6 +1,6 @@
 import React from "react";
 import Title from "./Title";
-import aboutImg from "/public/Snapchat-1223345087.png";
+import aboutImg from "/public/Profile Photo.png";
 import Image from "next/image";
 
 function About() {

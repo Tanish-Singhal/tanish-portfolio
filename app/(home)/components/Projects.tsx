@@ -8,7 +8,7 @@ function Projects() {
     {
       name: "personal Portfolio",
       description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
-      image: "/Screenshot 2024-05-12 130736.png",
+      image: "/Demo Project 2.png",
       tags: ["all", "frontend"],
       tech: ["next js", "tailwind css", "acertinity ui"],
       github: "https://github.com/Tanish-Singhal",
@@ -17,7 +17,7 @@ function Projects() {
     {
       name: "personal Portfolio",
       description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
-      image: "/Screenshot 2024-05-12 130736.png",
+      image: "/Demo Project 1.png",
       tags: ["all", "full stack"],
       tech: ["next js", "tailwind css", "acertinity ui"],
       github: "",
@@ -26,7 +26,7 @@ function Projects() {
     {
       name: "personal Portfolio",
       description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
-      image: "/Screenshot 2024-05-12 130736.png",
+      image: "/Demo Project 1.png",
       tags: ["all", "Frontend"],
       tech: ["next js", "tailwind css", "acertinity ui"],
       github: "",
@@ -35,7 +35,7 @@ function Projects() {
     {
       name: "personal Portfolio",
       description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
-      image: "/Screenshot 2024-05-12 130736.png",
+      image: "/Demo Project 1.png",
       tags: ["all", "frontend"],
       tech: ["next js", "tailwind css", "acertinity ui"],
       github: "",
@@ -44,7 +44,7 @@ function Projects() {
     {
       name: "personal Portfolio",
       description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
-      image: "/Screenshot 2024-05-12 130736.png",
+      image: "/Demo Project 2.png",
       tags: ["all", "full stack"],
       tech: ["next js", "tailwind css", "acertinity ui"],
       github: "https://github.com/Tanish-Singhal",
