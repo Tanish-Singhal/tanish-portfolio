@@ -7,6 +7,7 @@ import Projects from "./components/Projects";
 import Testimonial from "./components/Testimonial";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
+import ScrollToTopButton from "./components/ScrollToTopButton";
 
 function page() {
   return (
@@ -17,7 +18,7 @@ function page() {
           <HeroSection />
         </div>
 
-        <div className="max-w-7xl mx-auto p-6 mt-20">
+        <div className="max-w-7xl mx-auto p-6 mt-24">
           <About />
         </div>
 
@@ -29,6 +30,8 @@ function page() {
           <Footer />
         </div>
       </div>
+
+      <ScrollToTopButton />
     </div>
   );
 }
