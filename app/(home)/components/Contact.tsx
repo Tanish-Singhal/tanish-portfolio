@@ -25,9 +25,7 @@ function Contact() {
       </p>
 
       <div className="flex justify-center">
-        <form 
-          className="mt-14 flex flex-col w-[50rem]"
-        >
+        <form className="mt-14 flex flex-col w-[50rem]">
           <input
             type="email"
             name="senderEmail"

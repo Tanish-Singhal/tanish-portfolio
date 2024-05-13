@@ -10,17 +10,17 @@ function Footer() {
       Icon: SiGithub,
     },
     {
-      link: "https://",
+      link: "https://twitter.com/TanishSing44334",
       label: "X",
       Icon: SiX,
     },
     {
-      link: "https://",
+      link: "https://discord.com/users/tanish_002/",
       label: "Discord",
       Icon: SiDiscord,
     },
     {
-      link: "https://",
+      link: "https://www.linkedin.com/in/tanishsinghal1",
       label: "LinkedIn",
       Icon: SiLinkedin,
     },

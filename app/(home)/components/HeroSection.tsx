@@ -1,9 +1,18 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
 import { MovingBorderBtn } from "@/components/ui/moving-border";
 import Title from "./Title";
 
 function HeroSection() {
+  function scrollToContact() {
+    const contactSection = document.getElementById("contact");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+
   return (
     <div className="min-h-[60vh] flex flex-col-reverse gap-20 lg:gap-0 lg:flex-row items-center justify-between mt-16 md:mt-0 animate-move-up">
       <div className="space-y-10 text-center  lg:text-left">
@@ -24,16 +33,18 @@ function HeroSection() {
         </div>
 
         <div className="flex items-center mt-4 lg:mt-8">
-          <Link href="#contact" className="inline-block mr-16">
+          <Link href="" className="inline-block mr-16" onClick={scrollToContact}>
             <Title text="Contact Me 📬" />
           </Link>
 
-          <MovingBorderBtn
-            borderRadius="2rem"
-            className="text-md p-3 font-semibold"
-          >
-            <p>Download Resume 📄</p>
-          </MovingBorderBtn>
+          <a href="/Tanish-Resume.pdf" download>
+            <MovingBorderBtn
+              borderRadius="2rem"
+              className="text-md p-3 font-semibold"
+            >
+              <p>Download Resume 📄</p>
+            </MovingBorderBtn>
+          </a>
         </div>
       </div>
 
@@ -57,7 +68,7 @@ function HeroSection() {
             borderRadius="0.5rem"
             className="text-md p-2 font-semibold"
           >
-            <p>📢 Available for Work</p>
+            <Link href="mailto:tanishsinghal510@gmail.com">📢 Available for Work</Link>
           </MovingBorderBtn>
         </div>
       </div>

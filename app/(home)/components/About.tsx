@@ -8,7 +8,7 @@ function About() {
     <div className="max-w-8xl mx-auto">
       <Title
         text="About Me 😁"
-        className="flex flex-col items-center justify-center -rotate-6"
+        className="flex flex-col items-center justify-center -rotate-6 animate-move-down"
       />
 
       <div className="flex flex-wrap pt-12">
