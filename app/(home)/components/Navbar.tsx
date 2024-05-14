@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import React from "react";
 import { SiDiscord, SiGithub, SiGmail, SiLinkedin, SiX } from "react-icons/si";
@@ -31,9 +33,22 @@ function Navbar() {
     },
   ];
 
+  function scrollToContact(event:any) {
+    event.preventDefault(); // Prevent default link behavior
+    const contactSection = document.getElementById("contact");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+
   return (
     <nav className="py-4 flex justify-between items-center md:py-6 animate-move-down">
-      <h1 className="text-2xl font-bold underline underline-offset-8 decoration-green-500 -rotate-2 md:text-3xl">Tanish Singhal ‍</h1>
+      <Link
+        href="/"
+        className="text-2xl font-bold underline underline-offset-8 decoration-green-500 -rotate-2 md:text-3xl"
+      >
+        Tanish Singhal
+      </Link>
 
       <div className="flex items-center gap-5">
         {socials.map((social, index) => {
@@ -41,10 +56,11 @@ function Navbar() {
 
           return (
             <Link
-              href={social.link}
               key={index}
               aria-label={social.label}
-              target={social.label === "Mail" ? "_self" : "_blank"}
+              href={social.link} 
+              onClick={social.label === "Mail" ? scrollToContact : undefined}
+              target={social.label === "Mail" ? "" : "_blank"} // Maintain target behavior
             >
               <Icon className="w-5 h-5 hover:scale-125 transition-all md:w-7 md:h-7" />
             </Link>

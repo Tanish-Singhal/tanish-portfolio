@@ -4,7 +4,7 @@ import Link from "next/link";
 
 function ProjectCard({ project }: any) {
   return (
-    <div className="max-w-sm rounded-[12px] overflow-hidden bg-zinc-800">
+    <div className="max-w-sm rounded-[12px] overflow-hidden bg-zinc-900">
       <div className="px-4 pt-4">
         <img
           className="block w-full h-48 object-cover object-center rounded-[12px]"
