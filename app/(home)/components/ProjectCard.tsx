@@ -3,15 +3,32 @@ import { SiGithub } from "react-icons/si";
 import Link from "next/link";
 
 function ProjectCard({ project }: any) {
+  const [isHovered, setIsHovered] = React.useState(false);
+
+  const handleHover = () => setIsHovered(!isHovered);
+
   return (
-    <div className="max-w-sm rounded-[12px] overflow-hidden bg-zinc-900">
-      <div className="px-4 pt-4">
-        <img
-          className="block w-full h-48 object-cover object-center rounded-[12px]"
-          src={project.image}
-          alt={project.name}
-        />
-      </div>
+    <div
+      className="max-w-sm rounded-lg overflow-hidden bg-zinc-900 relative"
+      onMouseEnter={handleHover}
+      onMouseLeave={handleHover}
+      onTouchStart={handleHover}
+      onTouchEnd={handleHover}
+    >
+      {/* Image that is always visible */}
+      <img
+        className="block w-full h-48 object-cover object-center"
+        src={project.image}
+        alt={project.name}
+      />
+      {/* Image that is only visible on hover */}
+      <img
+        className={`absolute top-0 left-0 w-full h-48 object-cover object-center transition duration-300 ease-in-out ${
+          isHovered ? "opacity-100" : "opacity-0"
+        }`}
+        src={project.hoverImage}
+        alt={project.name}
+      />
       <div className="px-6 py-4">
         <h2 className="text-xl font-bold text-white mb-2">{project.name}</h2>
         <p className="text-gray-400 text-base">{project.description}</p>
@@ -31,14 +48,14 @@ function ProjectCard({ project }: any) {
       <div className="px-6 py-2 mb-3 flex gap-3">
         <Link
           href={project.website}
-          className="bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-2 px-4 rounded-lg mr-2"
+          className="bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-2 px-4 rounded-lg mr-2 w-1/2 flex items-center justify-center"
           target="_blank"
         >
           Live Demo
         </Link>
         <Link
           href={project.github}
-          className="flex items-center justify-center gap-2 bg-gray-700 hover:bg-gray-800 text-white font-semibold py-2 px-4 rounded-lg"
+          className="flex items-center justify-center gap-2 bg-gray-700 hover:bg-gray-800 text-white font-semibold py-2 px-4 rounded-lg w-1/2"
           target="_blank"
         >
           <SiGithub />

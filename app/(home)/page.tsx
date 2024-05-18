@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "./components/Navbar";
+import FloatingNavbar from "./components/FloatingNavbar";
 import HeroSection from "./components/HeroSection";
 import About from "./components/About";
 import Skills from "./components/Skills";
@@ -15,6 +16,7 @@ function page() {
       <div className="dark:bg-black bg-white  dark:bg-grid-white/[0.1] bg-grid-black/[0.2] relative">
         <div className="max-w-7xl mx-auto p-6">
           <Navbar />
+          <FloatingNavbar />
           <HeroSection />
         </div>
 
@@ -22,7 +24,7 @@ function page() {
           <About />
         </div>
 
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-7xl mx-auto">
           <Skills />
           <Projects />
           <Testimonial />

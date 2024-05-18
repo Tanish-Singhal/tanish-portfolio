@@ -50,7 +50,7 @@ function Navbar() {
         Tanish Singhal
       </Link>
 
-      <div className="flex items-center gap-5">
+      <div className="flex items-center gap-4 sm:gap-5">
         {socials.map((social, index) => {
           const Icon = social.Icon;
 

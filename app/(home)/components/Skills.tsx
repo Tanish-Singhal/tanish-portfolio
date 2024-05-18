@@ -30,6 +30,7 @@ import {
   SiPrisma,
   SiPython,
   SiReact,
+  SiRecoil,
   SiRedux,
   SiSass,
   SiShadcnui,
@@ -89,6 +90,10 @@ function Skills() {
     {
       text: "React",
       Icon: SiReact,
+    },
+    {
+      text: "Recoil",
+      Icon: SiRecoil
     },
     {
       text: "Redux",
@@ -154,34 +159,34 @@ function Skills() {
       text: "Supabase",
       Icon: SiSupabase,
     },
-    {
-      text: "Docker",
-      Icon: SiDocker,
-    },
-    {
-      text: "Turborepo",
-      Icon: SiTurborepo,
-    },
-    {
-      text: "WebRTC",
-      Icon: SiWebrtc,
-    },
-    {
-      text: "Socket.io",
-      Icon: SiSocketdotio,
-    },
-    {
-      text: "AWS",
-      Icon: SiAmazonaws,
-    },
+    // {
+    //   text: "Docker",
+    //   Icon: SiDocker,
+    // },
+    // {
+    //   text: "Turborepo",
+    //   Icon: SiTurborepo,
+    // },
+    // {
+    //   text: "WebRTC",
+    //   Icon: SiWebrtc,
+    // },
+    // {
+    //   text: "Socket.io",
+    //   Icon: SiSocketdotio,
+    // },
+    // {
+    //   text: "AWS",
+    //   Icon: SiAmazonaws,
+    // },
     {
       text: "Vercel",
       Icon: SiVercel,
     },
-    {
-      text: "Netlify",
-      Icon: SiNetlify,
-    },
+    // {
+    //   text: "Netlify",
+    //   Icon: SiNetlify,
+    // },
     {
       text: "C",
       Icon: SiC,
@@ -201,7 +206,7 @@ function Skills() {
   ];
 
   return (
-    <div className="max-w-8xl mx-auto pt-20 lg:pt-24">
+    <div className="max-w-8xl mx-auto pt-20 lg:pt-24" id="skills">
       <Title
         text="Skills 🔪"
         className="flex flex-col items-center justify-center -rotate-6"

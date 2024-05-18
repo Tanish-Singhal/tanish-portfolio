@@ -30,7 +30,7 @@ function ScrollToTopButton() {
   return (
     // Render button conditionally based on showButton state
     <button
-      className={`fixed bottom-10 right-10 bg-green-500 hover:bg-green-700 text-white text-lg font-bold py-4 px-4 rounded-full z-50 animate-move-up md:bottom-20 ${
+      className={`fixed bottom-10 right-10 bg-green-500 hover:bg-green-700 text-white text-xl font-bold py-4 px-4 sm:py-5 sm:px-5 rounded-full z-50 animate-move-up md:bottom-20 ${
         showButton ? "block" : "hidden"
       }`}
       onClick={goToTop}

@@ -26,9 +26,7 @@ function HeroSection() {
 
         <div className="flex justify-center lg:justify-start">
           <p className="text-center text-gray-300 w-96  lg:text-left">
-            {
-              "Based in India. I'm a Full Stack developer passionate about building a modern web application that users love."
-            }
+            Based in India. I'm a Full Stack Developer passionate about building a modern Web Application that users love.
           </p>
         </div>
 

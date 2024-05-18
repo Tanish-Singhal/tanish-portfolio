@@ -27,10 +27,10 @@ function Footer() {
   ];
 
   return (
-    <div className="mt-20 mb-6 px-6">
+    <footer className="mt-20 mb-6 px-6">
       <div className="w-full h-2 bg-green-500 rounded-full"></div>
       <div className="w-full h-2 bg-indigo-500 rounded-full translate-x-2"></div>
-      <div className="py-7 mx-8 flex flex-col gap-5 md:flex-row justify-between items-center md:py-6">
+      <div className="py-8 mx-8 flex flex-col gap-5 md:flex-row justify-between items-center md:py-6">
         <h1 className="text-xl font-bold md:text-3xl underline underline-offset-8 decoration-green-500 selectable">
           tanishsinghal510@gmail.com
         </h1>
@@ -52,7 +52,7 @@ function Footer() {
           })}
         </div>
       </div>
-    </div>
+    </footer>
   );
 }
 
