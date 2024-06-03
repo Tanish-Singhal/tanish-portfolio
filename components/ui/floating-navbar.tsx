@@ -46,7 +46,7 @@ export const FloatingNav = ({
         animate={{ y: visible ? 0 : -100, opacity: visible ? 1 : 0 }}
         transition={{ duration: 0.2 }}
         className={cn(
-          "flex max-w-fit flex-wrap fixed top-5 inset-x-0 mx-auto border-4 dark:border-green-500 rounded-2xl dark:bg-zinc-900 bg-white shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000] px-4 py-4 items-center justify-center space-x-4 sm:px-5 sm:py-4 sm:text-lg sm:gap-6",
+          "flex max-w-fit flex-wrap fixed top-5 inset-x-0 mx-auto border-2 dark:border-green-500 rounded-2xl dark:bg-zinc-900 bg-white shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000] px-4 py-4 items-center justify-center space-x-4 sm:px-5 sm:py-3 sm:text-lg sm:gap-6",
           className
         )}
       >

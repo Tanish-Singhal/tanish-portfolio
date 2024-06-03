@@ -17,10 +17,13 @@ function page() {
         <div className="max-w-7xl mx-auto p-6">
           <Navbar />
           <FloatingNavbar />
+          <div className="mt-8">
+
           <HeroSection />
+          </div>
         </div>
 
-        <div className="max-w-7xl mx-auto p-6 mt-24">
+        <div className="max-w-7xl mx-auto p-6 mt-28">
           <About />
         </div>
 

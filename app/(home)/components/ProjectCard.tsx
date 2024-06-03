@@ -9,7 +9,7 @@ function ProjectCard({ project }: any) {
 
   return (
     <div
-      className="max-w-sm rounded-lg overflow-hidden bg-zinc-900 relative"
+      className="max-w-sm rounded-xl overflow-hidden bg-zinc-900 relative"
       onMouseEnter={handleHover}
       onMouseLeave={handleHover}
       onTouchStart={handleHover}
@@ -48,14 +48,14 @@ function ProjectCard({ project }: any) {
       <div className="px-6 py-2 mb-3 flex gap-3">
         <Link
           href={project.website}
-          className="bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-2 px-4 rounded-lg mr-2 w-1/2 flex items-center justify-center"
+          className="bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-2 px-4 rounded-xl mr-2 w-1/2 flex items-center justify-center"
           target="_blank"
         >
           Live Demo
         </Link>
         <Link
           href={project.github}
-          className="flex items-center justify-center gap-2 bg-gray-700 hover:bg-gray-800 text-white font-semibold py-2 px-4 rounded-lg w-1/2"
+          className="flex items-center justify-center gap-2 bg-gray-700 hover:bg-gray-800 text-white font-semibold py-2 px-4 rounded-xl w-1/2"
           target="_blank"
         >
           <SiGithub />

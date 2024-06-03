@@ -6,20 +6,20 @@ import ProjectCard from "./ProjectCard";
 function Projects() {
   const projects = [
     {
-      name: "AI Image SaaS - Canva Application",
-      description: "A real Saas App with Ai features and a payment and credits system using latest tech stack.",
+      name: "Personal Portfolio",
+      description: "Explore my world through a personalized platform, designed to highlight my unique Skills, Experiences, and Achievements.",
       image: "/nenad-novakovic-mvG5WDANqPw-unsplash.jpg",
-      hoverImage: "/Demo Project 2.png",
+      hoverImage: "/Demo Project 1.png",
       tags: ["all", "frontend"],
       tech: ["next js", "tailwind css", "acertinity ui"],
       github: "https://github.com/Tanish-Singhal",
       website: "",
     },
     {
-      name: "personal Portfolio",
-      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+      name: "AI Image SaaS - Canva Application",
+      description: "A real Saas App with Ai features and a payment and credits system using latest tech stack.",
       image: "/bright-colors-mixing-gently.jpg",
-      hoverImage: "/Demo Project 1.png",
+      hoverImage: "/Demo Project 2.png",
       tags: ["all", "full stack"],
       tech: ["next js", "tailwind css", "acertinity ui"],
       github: "",
@@ -27,7 +27,7 @@ function Projects() {
     },
     {
       name: "personal Portfolio",
-      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+      description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus vel saepe doloremque quam repellat",
       image: "/vivid-blurred-colorful-wallpaper-background.jpg",
       hoverImage: "/Demo Project 1.png",
       tags: ["all", "Frontend"],
@@ -47,7 +47,7 @@ function Projects() {
     },
     {
       name: "personal Portfolio",
-      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+      description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus vel saepe doloremque quam repellat",
       image: "/pink-color-pastel-gradient-background.png",
       hoverImage: "/Demo Project 2.png",
       tags: ["all", "full stack"],
@@ -57,7 +57,7 @@ function Projects() {
     },
     {
       name: "personal Portfolio",
-      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+      description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus vel saepe doloremque quam repellat",
       image: "/Blue-pastel-gradient-background-free-download.-scaled.jpg",
       hoverImage: "/Demo Project 2.png",
       tags: ["all", "full stack"],
@@ -107,7 +107,7 @@ function Projects() {
         {filters.map((item, index) => (
           <button
             key={index}
-            className={`bg-zinc-900 rounded-lg py-3 px-5 text-lg font-semibold cursor-pointer whitespace-nowrap ${
+            className={`bg-zinc-900 rounded-xl py-3 px-5 text-lg font-semibold cursor-pointer whitespace-nowrap ${
               selectedTag === item.id ? "bg-green-400 text-black" : ""
             }`}
             onClick={() => {
@@ -120,7 +120,7 @@ function Projects() {
       </div>
 
       <div className="flex justify-center px-7">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {projectData.map((project, index) => (
             <ProjectCard key={index} project={project} />
           ))}
