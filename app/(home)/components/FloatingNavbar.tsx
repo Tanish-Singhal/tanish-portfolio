@@ -17,10 +17,10 @@ function FloatingNavbar() {
           name: "Projects",
           link: "#projects",
         },
-        {
-          name: "Experience",
-          link: "#experience",
-        },
+        // {
+        //   name: "Experience",
+        //   link: "#experience",
+        // },
         { 
           name: "Contact", 
           link: "#contact",

@@ -31,7 +31,6 @@ function page() {
         <div className="max-w-7xl mx-auto">
           <Skills />
           <Projects />
-          <Experience />
           <Testimonial />
           <Contact />
           <Footer />

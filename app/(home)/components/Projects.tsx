@@ -108,7 +108,7 @@ function Projects() {
           <button
             key={index}
             className={`bg-zinc-900 rounded-xl py-3 px-5 text-lg font-semibold cursor-pointer whitespace-nowrap ${
-              selectedTag === item.id ? "bg-green-400 text-black" : ""
+              selectedTag === item.id ? "bg-yellow-400 text-black" : ""
             }`}
             onClick={() => {
               filterHandler(item.id);
