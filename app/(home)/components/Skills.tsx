@@ -7,12 +7,15 @@ import {
   SiAmazonaws,
   SiBootstrap,
   SiC,
+  SiCloudflare,
+  SiCloudflareworkers,
   SiCplusplus,
   SiCss3,
   SiDocker,
   SiExpress,
   SiGit,
   SiGithub,
+  SiHono,
   SiHtml5,
   SiJavascript,
   SiJsonwebtokens,
@@ -183,6 +186,14 @@ function Skills() {
       text: "Vercel",
       Icon: SiVercel,
     },
+    {
+      text: "Cloudflare Workers",
+      Icon: SiCloudflare,
+    },
+    {
+      text: "Hono",
+      Icon: SiHono,
+    },
     // {
     //   text: "Netlify",
     //   Icon: SiNetlify,
@@ -208,7 +219,7 @@ function Skills() {
   return (
     <div className="max-w-8xl mx-auto pt-20 lg:pt-24" id="skills">
       <Title
-        text="Skills 🔪"
+        text="Skills 🔪 (Hover me)"
         className="flex flex-col items-center justify-center -rotate-6"
       />
 
