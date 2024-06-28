@@ -1,6 +1,7 @@
 import React from "react";
 import { SiGithub } from "react-icons/si";
 import Link from "next/link";
+import Image from "next/image";
 
 function ProjectCard({ project }: any) {
   const [isHovered, setIsHovered] = React.useState(false);
@@ -16,18 +17,22 @@ function ProjectCard({ project }: any) {
       onTouchEnd={handleHover}
     >
       {/* Image that is always visible */}
-      <img
+      <Image
         className="block w-full h-48 object-cover object-center"
         src={project.image}
         alt={project.name}
+        width={500}
+        height={500}
       />
       {/* Image that is only visible on hover */}
-      <img
+      <Image
         className={`absolute top-0 left-0 w-full h-48 object-cover object-center transition duration-300 ease-in-out ${
           isHovered ? "opacity-100" : "opacity-0"
         }`}
         src={project.hoverImage}
         alt={project.name}
+        width={500}
+        height={500}
       />
       <div className="px-6 py-4">
         <h2 className="text-xl font-bold text-white mb-2">{project.name}</h2>
@@ -48,7 +53,7 @@ function ProjectCard({ project }: any) {
       <div className="px-6 py-2 mb-3 flex gap-3">
         <Link
           href={project.website}
-          className="bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-2 px-4 rounded-xl mr-2 w-1/2 flex items-center justify-center"
+          className="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded-xl mr-2 w-1/2 flex items-center justify-center"
           target="_blank"
         >
           Live Demo

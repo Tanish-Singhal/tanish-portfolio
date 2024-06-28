@@ -22,12 +22,12 @@ function HeroSection() {
           Nice to meet you!
           <br />
           <span className="underline underline-offset-8 decoration-green-500">
-            I'm Tanish.
+            I&apos;m Tanish.
           </span>
         </h1>
 
         <p className="text-xl text-gray-300 w-96 mx-auto md:mx-0">
-          Based in India. I'm a Full Stack Developer passionate about building
+          Based in India. I&apos;m a Full Stack Developer passionate about building
           modern Web Applications that users love.
         </p>
 
