@@ -11,7 +11,7 @@ function Projects() {
       image: "/nenad-novakovic-mvG5WDANqPw-unsplash.jpg",
       hoverImage: "/Portfolio Project.png",
       tags: ["all", "frontend"],
-      tech: ["next js", "tailwind css", "acertinity ui"],
+      tech: ["next js", "tailwind", "acertinity"],
       github: "https://github.com/Tanish-Singhal/tanish-portfolio",
       website: "https://tanish-portfolio-nu.vercel.app/",
     },
@@ -100,14 +100,14 @@ function Projects() {
     <div className="py-10 px-5 sm:p-0 mt-7" id="projects">
       <Title
         text="Projects 🎨"
-        className="flex flex-col items-center justify-center -rotate-6"
+        className="flex flex-col items-center justify-center"
       />
 
       <div className="flex justify-center md:justify-center gap-[10px] mb-[50px] overflow-auto mt-8">
         {filters.map((item, index) => (
           <button
             key={index}
-            className={`bg-zinc-900 rounded-xl py-3 px-5 text-lg font-semibold cursor-pointer whitespace-nowrap ${
+            className={`bg-zinc-900 rounded-xl py-3 px-5 text-md sm:text-lg font-semibold cursor-pointer whitespace-nowrap ${
               selectedTag === item.id ? "text-yellow-400" : ""
             }`}
             onClick={() => {

@@ -219,8 +219,8 @@ function Skills() {
   return (
     <div className="max-w-8xl mx-auto pt-20 lg:pt-24" id="skills">
       <Title
-        text="Skills 🔪 (Hover me)"
-        className="flex flex-col items-center justify-center -rotate-6"
+        text="Skills 🔪 (hover me)"
+        className="flex flex-col items-center justify-center"
       />
 
       <HoverEffect items={skills} />

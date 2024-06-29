@@ -63,9 +63,9 @@ function Contact() {
 
   return (
     <section id="contact" className="max-w-8xl mx-auto pt-20 px-6 lg:pt-24 mt-4 mb-20">
-      <Title text="Contact Me ☎️" className="flex flex-col items-center justify-center -rotate-6" />
+      <Title text="Contact Me ☎️" className="flex flex-col items-center justify-center" />
       
-      <p className="mt-8 text-xl text-gray-300 text-center lg:text-center">
+      <p className="mt-8 text-md sm:text-xl text-gray-300 text-center lg:text-center">
         Please Contact me directly at{" "}
         <a className="underline font-bold mx-2" href="mailto:tanishsinghal510@gmail.com">
           tanishsinghal510@gmail.com
@@ -74,7 +74,7 @@ function Contact() {
       </p>
       
       <div className="flex justify-center">
-        <form className="mt-14 flex flex-col w-[50rem]" onSubmit={handleSubmit}>
+        <form className="mt-8 flex flex-col w-[50rem]" onSubmit={handleSubmit}>
           <input
             type="email"
             value={email}

@@ -42,7 +42,7 @@ function Navbar() {
   }
 
   return (
-    <nav className="py-4 flex justify-between items-center md:py-6 animate-move-down">
+    <nav className="py-2 flex justify-between items-center md:py-6 animate-move-down">
       <Link
         href="/"
         className="text-2xl font-bold underline underline-offset-8 decoration-green-500 -rotate-2 md:text-3xl"

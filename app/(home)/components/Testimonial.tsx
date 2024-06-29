@@ -15,7 +15,7 @@ function Testimonial() {
       title: "Project Manager at Netflix"
     },
     {
-      quote: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quidem vel, recusandae vero adipisci inventore, quasi culpa expedita incidunt nisi eum! Nulla accusamus sequi deleniti.",
+      quote: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quidem vel, recusandae vero adipisci inventore, quasi culpa expedita incidunt nisi eum!",
       name: "Ajeeb Aadmi",
       title: "Project Manager at Netflix"
     },
@@ -25,7 +25,7 @@ function Testimonial() {
       title: "Project Manager at Netflix"
     },
     {
-      quote: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quidem vel, recusandae vero adipisci inventore, quasi culpa expedita incidunt nisi eum! Nulla accusamus sequi deleniti.",
+      quote: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quidem vel, recusandae vero adipisci inventore, quasi culpa expedita incidunt nisi eum!",
       name: "Ajeeb Aadmi",
       title: "Project Manager at Netflix"
     },
@@ -35,7 +35,7 @@ function Testimonial() {
     <div className="max-w-8xl mx-auto pt-20 lg:pt-24 mt-4" id="testimonials">
       <Title
         text="Testmonials 🔊"
-        className="flex flex-col items-center justify-center -rotate-6"
+        className="flex flex-col items-center justify-center"
       />
       <InfiniteMovingCards items={testimonials} speed="slow" className='mt-10' />
     </div>
