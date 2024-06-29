@@ -97,7 +97,7 @@ function Contact() {
       
           <button
             type="submit"
-            className="flex justify-center items-center gap-2 font-bold h-[3rem] w-[8rem] bg-indigo-500 text-white rounded-full outline-none"
+            className="flex justify-center items-center gap-2 font-bold h-[3rem] w-[8rem] bg-indigo-600 hover:bg-indigo-700 text-white rounded-full outline-none"
           >
             Submit <FaPaperPlane />
           </button>

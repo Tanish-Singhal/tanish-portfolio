@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useState } from "react";
 import {
   motion,
@@ -51,15 +52,16 @@ export const FloatingNav = ({
         )}
       >
         {navItems.map((navItem, idx) => (
-          <a
+          <Link
             key={`nav-item-${idx}`}
+            href={navItem.link}
             onClick={() => scrollToSection(navItem.link.substring(1))}
             className={cn(
               "cursor-pointer relative dark:text-white items-center flex space-x-3 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500"
             )}
           >
             <span className="sm:block text-md font-semibold">{navItem.name}</span>
-          </a>
+          </Link>
         ))}
       </motion.div>
     </AnimatePresence>
