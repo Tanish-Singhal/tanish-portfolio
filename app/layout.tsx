@@ -6,9 +6,9 @@ import { ThemeProvider } from "@/components/theme-provider";
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-	metadataBase: new URL("http://localhost:3000/"),
+	metadataBase: new URL("https://tanish-portfolio-nu.vercel.app/"),
 
-	title: "Tanish Portfolio",
+	title: "Tanish Singhal Portfolio",
 	authors: {
 		name: "Tanish Singhal",
 	},
@@ -16,19 +16,12 @@ export const metadata: Metadata = {
 	description:
 		"Based in India. I'm a Full Stack developer passionate about building a modern web application that users love.",
 	openGraph: {
-		title: "Tanish Portfolio",
+		title: "Tanish Singhal Portfolio",
 		description:
 			"Based in India. I'm a Full Stack developer passionate about building a modern web application that users love.",
-		url: "http://localhost:3000/",
-		siteName: "Tanish Portfolio",
-		images: [
-      {
-        url: "/Portfolio Photo.png",
-        width: 800,
-        height: 600,
-        alt: "Tanish Singhal",
-      },
-    ],
+		url: "https://tanish-portfolio-nu.vercel.app/",
+		siteName: "Tanish Singhal Portfolio",
+		images: "/Portfolio Photo.png",
 		type: "website",
 	},
 	keywords: ["Full Stack Developer", "Tanish Singhal", "Web Development", "Portfolio", "React", "Node.js", "JavaScript", "CSS", "HTML", "dailywebcoding"],
