@@ -20,6 +20,8 @@ function Page() {
   const barRefs = useRef<HTMLDivElement[]>([]);
 
   useEffect(() => {
+    document.body.classList.add("no-scroll");
+
     function startLoader() {
       let current = 0;
 
@@ -73,6 +75,7 @@ function Page() {
         barRefs.current.forEach((bar) => {
           if (bar) bar.style.display = "none";
         });
+        document.body.classList.remove("no-scroll");
       },
     });
   }, []);
@@ -92,7 +95,7 @@ function Page() {
             ref={(el) => {
               if (el) barRefs.current[index] = el;
             }}
-            className="bar dark:bg-[#161617]"
+            className="bar dark:bg-neutral-800"
           ></div>
         ))}
       </div>

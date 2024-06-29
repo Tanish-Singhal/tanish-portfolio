@@ -11,10 +11,10 @@
 }
 
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(transparent, #30ff00);
+  background: #d8d8d8;
   border-radius: 6px;
 }
 
@@ -55,4 +55,8 @@
   font-size: 7vw;
   letter-spacing: -5px;
   font-family: "Generator Bold";
+}
+
+.no-scroll {
+  overflow: hidden;
 }
