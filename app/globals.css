@@ -26,8 +26,9 @@
   display: flex;
 }
 .bar {
-  width: 10vw;
-  height: 105vh;
+  width: 10%;
+  height: 100vh;
+  flex-shrink: 0;
 }
 .counter {
   position: fixed;
@@ -37,7 +38,7 @@
   justify-content: flex-end;
   align-items: flex-start;
   z-index: 10001; /* Higher than overlay */
-  font-size: 25vw;
+  font-size: 15vw;
   font-family: "Generator Bold";
   right: 15px;
   top: 15px;
@@ -52,11 +53,38 @@
   justify-content: flex-end;
   align-items: flex-end;
   z-index: 10001; /* Higher than overlay */
-  font-size: 7vw;
-  letter-spacing: -5px;
+  font-size: 5vw;
+  letter-spacing: -1px;
   font-family: "Generator Bold";
 }
 
 .no-scroll {
   overflow: hidden;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .bar {
+    width: 10%;
+  }
+  .counter {
+    font-size: 20vw;
+  }
+  .counter-1 {
+    font-size: 7vw;
+    letter-spacing: -0.5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .bar {
+    width: 10%;
+  }
+  .counter {
+    font-size: 25vw;
+  }
+  .counter-1 {
+    font-size: 9vw;
+    letter-spacing: -0.25px;
+  }
 }
