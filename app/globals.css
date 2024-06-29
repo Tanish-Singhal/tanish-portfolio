@@ -22,7 +22,7 @@
   position: fixed;
   width: 100vw;
   height: 100vh;
-  z-index: 12;
+  z-index: 10000; /* Highest possible z-index */
   display: flex;
 }
 .bar {
@@ -36,7 +36,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
-  z-index: 1000;
+  z-index: 10001; /* Higher than overlay */
   font-size: 25vw;
   font-family: "Generator Bold";
   right: 15px;
@@ -51,7 +51,7 @@
   bottom: 15px;
   justify-content: flex-end;
   align-items: flex-end;
-  z-index: 1000;
+  z-index: 10001; /* Higher than overlay */
   font-size: 7vw;
   letter-spacing: -5px;
   font-family: "Generator Bold";
