@@ -21,10 +21,21 @@ export const metadata: Metadata = {
 			"Based in India. I'm a Full Stack developer passionate about building a modern web application that users love.",
 		url: "http://localhost:3000/",
 		siteName: "Tanish Portfolio",
-		images: "/Portfolio Photo.png",
+		images: [
+      {
+        url: "/Portfolio Photo.png",
+        width: 800,
+        height: 600,
+        alt: "Tanish Singhal",
+      },
+    ],
 		type: "website",
 	},
-	keywords: ["daily web coding", "Tanish Singhal", "dailywebcoding"],
+	keywords: ["Full Stack Developer", "Tanish Singhal", "Web Development", "Portfolio", "React", "Node.js", "JavaScript", "CSS", "HTML", "dailywebcoding"],
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
