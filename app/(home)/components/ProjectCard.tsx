@@ -34,11 +34,11 @@ function ProjectCard({ project }: any) {
         width={500}
         height={500}
       />
-      <div className="px-6 py-4">
+      <div className="px-4 sm:px-6 py-4">
         <h2 className="text-xl font-bold text-white mb-2">{project.name}</h2>
         <p className="text-gray-400 text-base">{project.description}</p>
       </div>
-      <div className="px-6 pt-2 pb-3">
+      <div className="px-4 sm:px-6 pt-2 pb-3">
         <div className="flex flex-wrap">
           {project.tech.map((tech: any, techIndex: any) => (
             <span
@@ -50,7 +50,7 @@ function ProjectCard({ project }: any) {
           ))}
         </div>
       </div>
-      <div className="px-6 py-2 mb-3 flex gap-3">
+      <div className="px-4 sm:px-6 py-1 sm:py-2 mb-3 flex gap-3">
         <Link
           href={project.website}
           className="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded-xl mr-2 w-1/2 flex items-center justify-center"

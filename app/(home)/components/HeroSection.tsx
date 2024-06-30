@@ -33,7 +33,7 @@ function HeroSection() {
 
         <div className="flex items-center justify-center md:justify-start mt-4 lg:mt-8">
           <Link href="" onClick={scrollToContact}>
-            <h2 className="text-xl sm:text-4xl font-bold">Contact Me 📬</h2>
+            <h2 className="text-2xl sm:text-4xl font-bold">Contact Me 📬</h2>
             <div className="w-30 sm:w-40 h-2 bg-green-500 rounded-full"></div>
             <div className="w-30 sm:w-40 h-2 bg-indigo-500 rounded-full translate-x-2"></div>
           </Link>
@@ -50,14 +50,14 @@ function HeroSection() {
 
       <div className="relative md:mt-8">
         <Image
-          className="rounded-2xl h-auto w-64 sm:w-72"
+          className="rounded-2xl h-auto w-60 sm:w-72"
           src={aboutImg}
           alt="personImage"
         />
-        <div className="absolute bottom-6 left-4 sm:left-7">
+        <div className="absolute bottom-6 left-6 sm:left-7">
           <MovingBorderBtn
             borderRadius="0.5rem"
-            className="text-md p-2 font-semibold"
+            className="text-base sm:text-xl p-2 font-semibold"
           >
             <Link href="mailto:tanishsinghal510@gmail.com">
               📢 Available for Work

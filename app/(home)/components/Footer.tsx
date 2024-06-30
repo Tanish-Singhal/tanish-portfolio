@@ -27,7 +27,7 @@ function Footer() {
   ];
 
   return (
-    <footer className="mt-20 mb-6 px-6">
+    <footer className="mt-20 mb-4 px-6">
       <div className="w-full h-2 bg-green-500 rounded-full"></div>
       <div className="w-full h-2 bg-indigo-500 rounded-full translate-x-2"></div>
       <div className="py-8 mx-8 flex flex-col gap-5 md:flex-row justify-between items-center md:py-6">

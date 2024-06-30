@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Title from "./Title";
 import { FaPaperPlane } from "react-icons/fa";
+import { toast, Toaster } from "react-hot-toast";
 
 function Contact() {
   const [email, setEmail] = useState("");
@@ -25,8 +26,9 @@ function Contact() {
         body: formData,
       });
 
-      if (response.ok) {
+      if (response.ok || response.status === 0) { // Assuming no-cors response status won't be 200
         console.log("Form submitted successfully");
+        toast.success("Your message was sent successfully!");
         // Reset form fields after successful submission
         setEmail("");
         setMessage("");
@@ -101,6 +103,7 @@ function Contact() {
           >
             Submit <FaPaperPlane />
           </button>
+          <Toaster />
         </form>
       </div>
     </section>

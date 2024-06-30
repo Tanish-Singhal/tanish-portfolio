@@ -42,15 +42,15 @@ function Navbar() {
   }
 
   return (
-    <nav className="py-2 flex justify-between items-center md:py-6 animate-move-down">
+    <nav className="flex justify-between items-center md:py-4 animate-move-down">
       <Link
         href="/"
-        className="text-2xl font-bold underline underline-offset-8 decoration-green-500 -rotate-2 md:text-3xl"
+        className="text-2xl font-bold underline underline-offset-4 decoration-green-500 md:text-3xl"
       >
         Tanish Singhal
       </Link>
 
-      <div className="flex items-center gap-4 sm:gap-5">
+      <div className="flex items-center gap-3 sm:gap-5">
         {socials.map((social, index) => {
           const Icon = social.Icon;
 

@@ -7,11 +7,11 @@ function Projects() {
   const projects = [
     {
       name: "Personal Portfolio",
-      description: "Explore my world through a personalized platform, designed to highlight my unique Skills, Experiences, and Achievements.",
+      description: "Explore my world through a personalized platform, designed to highlight my Skills, Experiences, and Achievements.",
       image: "/nenad-novakovic-mvG5WDANqPw-unsplash.jpg",
       hoverImage: "/Portfolio Project.png",
       tags: ["all", "frontend"],
-      tech: ["next js", "tailwind", "acertinity"],
+      tech: ["next js", "tailwind css", "acertinity ui"],
       github: "https://github.com/Tanish-Singhal/tanish-portfolio",
       website: "https://tanish-portfolio-nu.vercel.app/",
     },
@@ -26,21 +26,21 @@ function Projects() {
       website: "",
     },
     {
-      name: "personal Portfolio",
-      description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus vel saepe doloremque quam repellat",
-      image: "/vivid-blurred-colorful-wallpaper-background.jpg",
-      hoverImage: "/Portfolio Project.png",
-      tags: ["all", "Frontend"],
-      tech: ["next js", "tailwind css", "acertinity ui"],
-      github: "",
-      website: "",
-    },
-    {
       name: "Facely - Video Conferencing App",
       description:"Simplyfy your video conferencing experience with Facely. Seamlessly connect with colleagues and friends.",
       image: "/vivid-blurred-colorful-background.jpg",
       hoverImage: "/Portfolio Project.png",
       tags: ["all", "frontend"],
+      tech: ["next js", "tailwind css", "acertinity ui"],
+      github: "",
+      website: "",
+    },
+    {
+      name: "personal Portfolio",
+      description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus vel saepe doloremque quam repellat",
+      image: "/vivid-blurred-colorful-wallpaper-background.jpg",
+      hoverImage: "/Portfolio Project.png",
+      tags: ["all", "Frontend"],
       tech: ["next js", "tailwind css", "acertinity ui"],
       github: "",
       website: "",
@@ -119,7 +119,7 @@ function Projects() {
         ))}
       </div>
 
-      <div className="flex justify-center px-7">
+      <div className="flex justify-center px-3 sm:px-7">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {projectData.map((project, index) => (
             <ProjectCard key={index} project={project} />

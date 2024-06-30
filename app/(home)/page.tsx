@@ -108,7 +108,7 @@ function Page() {
           </div>
         </div>
 
-        <div className="max-w-7xl mx-auto p-6 mt-28">
+        <div className="max-w-7xl mx-auto p-6 mt-20">
           <About />
         </div>
 
