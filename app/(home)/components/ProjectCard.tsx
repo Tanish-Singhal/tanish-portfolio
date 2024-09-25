@@ -1,9 +1,59 @@
 import React from "react";
-import { SiGithub } from "react-icons/si";
 import Link from "next/link";
 import Image from "next/image";
+import {
+  SiGithub,
+  SiMui,
+  SiNextdotjs,
+  SiShadcnui,
+  SiReact,
+  SiRedux,
+  SiTailwindcss,
+  SiNextui,
+  SiNodedotjs,
+  SiVercel,
+  SiReactrouter,
+  SiExpress,
+  SiMongodb,
+  SiJsonwebtokens,
+  SiRender,
+  SiZod,
+} from "react-icons/si";
 
-function ProjectCard({ project }: any) {
+type TechIconKey = "next js" | "tailwind css" | "acertinity ui" | "react js" | "redux toolkit";
+
+const techIcons: any = {
+  "next js": <SiNextdotjs className="w-7 h-7" />,
+  "tailwind css": <SiTailwindcss className="w-7 h-7" />,
+  "shadcn ui": <SiShadcnui className="w-7 h-7" />,
+  "next ui": <SiNextui className="w-7 h-7" />,
+  "react js": <SiReact className="w-7 h-7" />,
+  "react router": <SiReactrouter className="w-7 h-7" />,
+  "redux toolkit": <SiRedux className="w-7 h-7" />,
+  "node js": <SiNodedotjs className="w-7 h-7" />,
+  "express js": <SiExpress className="w-7 h-7" />,
+  "mongodb": <SiMongodb className="w-7 h-7" />,
+  "jwt": <SiJsonwebtokens className="w-7 h-7" />,
+  "zod": <SiZod className="w-7 h-7" />,
+  "vercel": <SiVercel className="w-7 h-7" />,
+  "render": <SiRender className="w-7 h-7" />,
+};
+
+interface Project {
+  name: string;
+  description: string;
+  image: string;
+  hoverImage: string;
+  tech: string[];
+  website: string;
+  github: string;
+}
+
+interface ProjectCardProps {
+  project: Project;
+}
+
+const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   const [isHovered, setIsHovered] = React.useState(false);
 
   const handleHover = () => setIsHovered(!isHovered);
@@ -16,7 +66,6 @@ function ProjectCard({ project }: any) {
       onTouchStart={handleHover}
       onTouchEnd={handleHover}
     >
-      {/* Image that is always visible */}
       <Image
         className="block w-full h-48 object-cover object-center"
         src={project.image}
@@ -24,7 +73,6 @@ function ProjectCard({ project }: any) {
         width={500}
         height={500}
       />
-      {/* Image that is only visible on hover */}
       <Image
         className={`absolute top-0 left-0 w-full h-48 object-cover object-center transition duration-300 ease-in-out ${
           isHovered ? "opacity-100" : "opacity-0"
@@ -38,17 +86,12 @@ function ProjectCard({ project }: any) {
         <h2 className="text-xl font-bold text-white mb-2">{project.name}</h2>
         <p className="text-gray-400 text-base">{project.description}</p>
       </div>
-      <div className="px-4 sm:px-6 pt-2 pb-3">
-        <div className="flex flex-wrap">
-          {project.tech.map((tech: any, techIndex: any) => (
-            <span
-              key={techIndex}
-              className="inline-block bg-gray-800 dark:bg-gray-600 rounded-full px-3 py-1 text-sm font-semibold text-gray-300 mr-2 mb-2"
-            >
-              {tech}
-            </span>
-          ))}
-        </div>
+      <div className="px-4 sm:px-6 pt-2 pb-3 flex flex-wrap gap-2">
+        {project.tech.map((tech, techIndex) => (
+          <span key={techIndex} className="flex items-center text-white mr-2">
+            {techIcons[tech.toLowerCase() as TechIconKey] || null}
+          </span>
+        ))}
       </div>
       <div className="px-4 sm:px-6 py-1 sm:py-2 mb-3 flex gap-3">
         <Link
@@ -69,6 +112,6 @@ function ProjectCard({ project }: any) {
       </div>
     </div>
   );
-}
+};
 
 export default ProjectCard;

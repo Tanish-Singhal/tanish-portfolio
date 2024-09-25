@@ -5,6 +5,7 @@ import Title from "./Title";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
 import {
   SiAmazonaws,
+  SiAuth0,
   SiBootstrap,
   SiC,
   SiCloudflare,
@@ -16,6 +17,7 @@ import {
   SiGit,
   SiGithub,
   SiHono,
+  SiReactrouter,
   SiHtml5,
   SiJavascript,
   SiJsonwebtokens,
@@ -46,6 +48,7 @@ import {
   SiVite,
   SiWebrtc,
   SiZod,
+  SiRender,
 } from "react-icons/si";
 
 function Skills() {
@@ -71,8 +74,16 @@ function Skills() {
       Icon: SiSass,
     },
     {
+      text: "Tailwind CSS",
+      Icon: SiTailwindcss,
+    },
+    {
       text: "Javascript",
       Icon: SiJavascript,
+    },
+    {
+      text: "TypeScript",
+      Icon: SiTypescript,
     },
     {
       text: "bootstrap",
@@ -83,10 +94,6 @@ function Skills() {
       Icon: SiMui,
     },
     {
-      text: "Tailwind CSS",
-      Icon: SiTailwindcss,
-    },
-    {
       text: "Vite",
       Icon: SiVite,
     },
@@ -95,9 +102,13 @@ function Skills() {
       Icon: SiReact,
     },
     {
-      text: "Recoil",
-      Icon: SiRecoil
+      text: "React Router",
+      Icon: SiReactrouter
     },
+    // {
+    //   text: "Recoil",
+    //   Icon: SiRecoil
+    // },
     {
       text: "Redux",
       Icon: SiRedux,
@@ -105,10 +116,6 @@ function Skills() {
     {
       text: "Next JS",
       Icon: SiNextdotjs,
-    },
-    {
-      text: "TypeScript",
-      Icon: SiTypescript,
     },
     {
       text: "Shadcn",
@@ -162,14 +169,14 @@ function Skills() {
       text: "Supabase",
       Icon: SiSupabase,
     },
-    // {
-    //   text: "Docker",
-    //   Icon: SiDocker,
-    // },
-    // {
-    //   text: "Turborepo",
-    //   Icon: SiTurborepo,
-    // },
+    {
+      text: "Docker",
+      Icon: SiDocker,
+    },
+    {
+      text: "Turborepo",
+      Icon: SiTurborepo,
+    },
     // {
     //   text: "WebRTC",
     //   Icon: SiWebrtc,
@@ -187,32 +194,16 @@ function Skills() {
       Icon: SiVercel,
     },
     {
-      text: "Cloudflare Workers",
-      Icon: SiCloudflare,
+      text: "Render",
+      Icon: SiRender, 
     },
     {
       text: "Hono",
       Icon: SiHono,
     },
-    // {
-    //   text: "Netlify",
-    //   Icon: SiNetlify,
-    // },
     {
-      text: "C",
-      Icon: SiC,
-    },
-    {
-      text: "C++",
-      Icon: SiCplusplus,
-    },
-    {
-      text: "Python",
-      Icon: SiPython,
-    },
-    {
-      text: "Linux",
-      Icon: SiLinux,
+      text: "Cloudflare Workers",
+      Icon: SiCloudflare,
     },
   ];
 

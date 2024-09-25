@@ -26,10 +26,10 @@ function Contact() {
         body: formData,
       });
 
-      if (response.ok || response.status === 0) { // Assuming no-cors response status won't be 200
+      if (response.ok || response.status === 0) {
         console.log("Form submitted successfully");
         toast.success("Your message was sent successfully!");
-        // Reset form fields after successful submission
+
         setEmail("");
         setMessage("");
       } else {

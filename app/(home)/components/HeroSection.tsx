@@ -3,9 +3,9 @@
 import React from "react";
 import Link from "next/link";
 import { MovingBorderBtn } from "@/components/ui/moving-border";
-import Title from "./Title";
 import Image from "next/image";
 import aboutImg from "/public/Profile Photo.png";
+import { toast, Toaster } from 'react-hot-toast';
 
 function HeroSection() {
   function scrollToContact() {
@@ -14,6 +14,10 @@ function HeroSection() {
       contactSection.scrollIntoView({ behavior: "smooth" });
     }
   }
+
+  const handleDownload = () => {
+    toast.success("Resume downloaded successfully!");
+  };
 
   return (
     <div className="min-h-[60vh] flex flex-col-reverse gap-20 lg:gap-0 md:flex-row items-center justify-between mt-16 md:mt-0 animate-move-up">
@@ -37,13 +41,14 @@ function HeroSection() {
             <div className="w-30 sm:w-40 h-2 bg-green-500 rounded-full"></div>
             <div className="w-30 sm:w-40 h-2 bg-indigo-500 rounded-full translate-x-2"></div>
           </Link>
-          <a href="/Tanish-Resume.pdf" download className="ml-4">
+          <a href="/TanishSinghal_Resume_2024.docx.pdf" download className="ml-4" onClick={handleDownload}>
             <MovingBorderBtn
               borderRadius="2rem"
               className="text-sm sm:text-xl p-3 font-semibold"
             >
               Download Resume 📄
             </MovingBorderBtn>
+            <Toaster />
           </a>
         </div>
       </div>
