@@ -99,7 +99,7 @@ function Page() {
           ></div>
         ))}
       </div>
-      <div className="dark:bg-black bg-white dark:bg-grid-white/[0.1] bg-grid-black/[0.2] relative">
+      <div className="dark:bg-black bg-white dark:bg-grid-white/[0.06] bg-grid-black/[0.2] relative">
         <div className="max-w-7xl mx-auto p-6">
           <Navbar />
           <FloatingNavbar />

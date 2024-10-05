@@ -30,7 +30,7 @@ function Projects() {
       name: "Taskster - Task Mangement App",
       description:"Developed a full-stack Kanban-style task management app with drag-and-drop functionality.",
       image: "/vivid-blurred-colorful-background.jpg",
-      hoverImage: "/Portfolio Project.png",
+      hoverImage: "/taskster.png",
       tags: ["all", "full stack"],
       tech: ["next js", "tailwind css", "shadcn ui", "next ui", "redux toolkit", "node js", "express js", "mongodb", "jwt", "zod", "vercel", "render"],
       github: "https://github.com/Tanish-Singhal/taskster",
