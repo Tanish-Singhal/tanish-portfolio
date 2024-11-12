@@ -18,6 +18,7 @@ import {
   SiJsonwebtokens,
   SiRender,
   SiZod,
+  SiReacthookform,
 } from "react-icons/si";
 
 type TechIconKey = "next js" | "tailwind css" | "acertinity ui" | "react js" | "redux toolkit";
@@ -28,6 +29,7 @@ const techIcons: any = {
   "shadcn ui": <SiShadcnui className="w-7 h-7" />,
   "next ui": <SiNextui className="w-7 h-7" />,
   "react js": <SiReact className="w-7 h-7" />,
+  "react hook form": <SiReacthookform className="w-7 h-7" />,
   "react router": <SiReactrouter className="w-7 h-7" />,
   "redux toolkit": <SiRedux className="w-7 h-7" />,
   "node js": <SiNodedotjs className="w-7 h-7" />,

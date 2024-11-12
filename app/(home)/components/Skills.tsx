@@ -49,6 +49,7 @@ import {
   SiWebrtc,
   SiZod,
   SiRender,
+  SiReacthookform,
 } from "react-icons/si";
 
 function Skills() {
@@ -104,6 +105,10 @@ function Skills() {
     {
       text: "React Router",
       Icon: SiReactrouter
+    },
+    {
+      text: "React Hook Form",
+      Icon: SiReacthookform
     },
     // {
     //   text: "Recoil",
