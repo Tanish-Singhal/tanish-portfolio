@@ -19,6 +19,9 @@ import {
   SiRender,
   SiZod,
   SiReacthookform,
+  SiPrisma,
+  SiSupabase,
+  SiPostman
 } from "react-icons/si";
 
 type TechIconKey = "next js" | "tailwind css" | "acertinity ui" | "react js" | "redux toolkit";
@@ -39,6 +42,9 @@ const techIcons: any = {
   "zod": <SiZod className="w-7 h-7" />,
   "vercel": <SiVercel className="w-7 h-7" />,
   "render": <SiRender className="w-7 h-7" />,
+  "prisma": <SiPrisma className="w-7 h-7" />,
+  "supabase": <SiSupabase className="w-7 h-7" />,
+  "postman": <SiPostman className="w-7 h-7" />,
 };
 
 interface Project {

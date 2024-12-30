@@ -11,11 +11,10 @@ function Projects() {
       image: "/nenad-novakovic-mvG5WDANqPw-unsplash.jpg",
       hoverImage: "/Portfolio Project.png",
       tags: ["all", "frontend"],
-      tech: ["next js", "tailwind css", "shadcn ui", "next ui", "vercel"],
+      tech: ["next js", "tailwind css", "shadcn ui", "vercel"],
       github: "https://github.com/Tanish-Singhal/tanish-portfolio",
       website: "https://tanish-portfolio-nu.vercel.app/",
     },
-
     {
       name: "Foodies - Food Ordering App",
       description: "Developed a user-friendly food ordering app using API of an Indian Unicorn Startup, featuring real-time restaurants and cuisine options and cart functionality.",
@@ -32,9 +31,19 @@ function Projects() {
       image: "/vivid-blurred-colorful-background.jpg",
       hoverImage: "/taskster.png",
       tags: ["all", "full stack"],
-      tech: ["next js", "tailwind css", "shadcn ui", "next ui", "react hook form", "redux toolkit", "node js", "express js", "mongodb", "jwt", "zod", "vercel", "render"],
+      tech: ["next js", "tailwind css", "shadcn ui", "react hook form", "redux toolkit", "node js", "express js", "mongodb", "jwt", "zod", "postman", "vercel", "render"],
       github: "https://github.com/Tanish-Singhal/taskster",
       website: "https://taskster.vercel.app/",
+    },
+    {
+      name: "ImagiCraft AI - Text to Image App",
+      description:"Create beautiful, unique images in seconds with our advanced AI image generator. No technical skills required - just describe what you want to see.",
+      image: "/vivid-blurred-colorful-wallpaper-background.jpg",
+      hoverImage: "/imagiCraftAI.png",
+      tags: ["all", "frontend"],
+      tech: ["next js", "tailwind css", "shadcn ui", "react hook form", "next auth", "prisma", "supabase", "vercel", "postman"],
+      github: "https://github.com/Tanish-Singhal/ImagiCraft-AI",
+      website: "https://imagicraft-ai.vercel.app/",
     },
     // {
     //   name: "AI Image SaaS - Canva Application",
