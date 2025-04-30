@@ -17,7 +17,7 @@ function Navbar() {
       Icon: SiGithub,
     },
     {
-      link: "https://twitter.com/TanishSing44334",
+      link: "https://x.com/offline_tnsh",
       label: "X",
       Icon: SiX,
     },
