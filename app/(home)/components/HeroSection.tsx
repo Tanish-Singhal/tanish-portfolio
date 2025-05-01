@@ -5,7 +5,7 @@ import Link from "next/link";
 import { MovingBorderBtn } from "@/components/ui/moving-border";
 import Image from "next/image";
 import aboutImg from "/public/Profile Photo.png";
-import { toast, Toaster } from 'react-hot-toast';
+import { toast, Toaster } from "react-hot-toast";
 
 function HeroSection() {
   function scrollToContact() {
@@ -17,6 +17,14 @@ function HeroSection() {
 
   const handleDownload = (e: React.MouseEvent) => {
     e.preventDefault();
+
+    const link = document.createElement("a");
+    link.href = "/TanishSinghal_Resume_2025.pdf";
+    link.download = "TanishSinghal_Resume_2025.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
     toast.success("Resume downloaded successfully!");
   };
 
@@ -34,8 +42,8 @@ function HeroSection() {
           </h1>
 
           <p className="text-md sm:text-xl text-gray-300 w-96 mx-auto md:mx-0">
-            Based in India. I&apos;m a Full Stack Developer passionate about building
-            modern Web Applications that users love.
+            Based in India. I&apos;m a Full Stack Developer passionate about
+            building modern Web Applications that users love.
           </p>
 
           <div className="flex items-center justify-center md:justify-start mt-4 lg:mt-8">
@@ -44,7 +52,11 @@ function HeroSection() {
               <div className="w-30 sm:w-40 h-2 bg-green-500 rounded-full"></div>
               <div className="w-30 sm:w-40 h-2 bg-indigo-500 rounded-full translate-x-2"></div>
             </Link>
-            <a href="/TanishSinghal_Resume_2024.docx.pdf" className="ml-4" onClick={handleDownload}>
+            <a
+              href="/TanishSinghal_Resume_2025.pdf"
+              className="ml-4"
+              onClick={handleDownload}
+            >
               <MovingBorderBtn
                 borderRadius="2rem"
                 className="text-sm sm:text-xl p-3 font-semibold"
